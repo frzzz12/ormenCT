@@ -1294,6 +1294,11 @@ textarea:focus {
     margin-top: 1rem;
 }
 
+.swrap .swrap-card .kotak img {
+  height: 400px;
+  width: 100%;
+}
+
 .swrap .swrap-card .swrap-card-1 img {
     width: 110px;
     height: 70px;
