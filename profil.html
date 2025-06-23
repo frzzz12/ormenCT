@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Profil Saya</title>
+</head>
+<body>
+    <!-- begin navbar -->
+    <div class="navbar">
+      <div class="div-ormen">
+        <div class="ormen">
+          <a href="index2.html">ormenCT</a>
+        </div>
+      </div>
+      <div class="div-href">
+        <div class="navbar-href">
+          <a href="index2.html">Beranda</a>
+          <a href="pemesanan.html">Pemesanan</a>
+          <a href="pencarian.html">Pencarian</a>
+          <a href="laporan.html">Pelaporan</a>
+          <a href="edukasi.html">Edukasi</a>
+        </div>
+      </div>
+      <div>
+        <div class="navbar-lonceng">
+          <a href="notif.html"><i class="fa-solid fa-bell"></i></a>
+          <div class="akun">1</div>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- Profil Begin -->
+    <div class="profil">
+        <div class="profil-1">
+          <button id="dropdownBtn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="dropdown" id="dropdownMenu">
+            <div class="dw-1">
+              <button id="dropdownBtn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="dw-a">
+              <div class="dw-xa">
+                <div class="dw-aa" onclick="window.location.href='index2.html'">
+                  <a>Beranda</a>
+                </div>
+                <div class="dw-aa" onclick="window.location.href='riwayatpemesanan.html'">
+                  <a href="riwayatpemesanan.html">Riwayat Pemesanan</a>
+                </div>
+                <div class="dw-aa" onclick="window.location.href='statistik.html'">
+                  <a href="statistik.html">Statistik Laporan</a>
+                </div>
+                <div class="dw-aa" style="background-color: #D9F0E1;" onclick="window.location.href='profil.html'">
+                  <a href="profil.html">Profil saya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="profil-card">
+            <div class="profil-card-1">
+                <img src="SOURCE/IMG/WhatsApp Image 2025-06-21 at 15.29.16_f7e92c08 (1).jpg" alt="">
+                <div class="profil-card-ket">
+                    <h1>Vyola Cecilia Potto</h1>
+                    <p>vyolasesilia@gmail.com</p>
+                    <p>+62 822 2313 4441</p>
+                    <p>Jl. Panjaitan, Wua-Wua, Kendari, Sulawesi Tenggara</p>
+                </div>
+            </div>
+            <div class="profil-card-2">
+                <div>
+                    <button>Edit Profil</button>
+                </div>
+                <div>
+                    <button>Ubah Kata Sandi</button>
+                </div>
+                <div>
+                    <button>Pengaturan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aktivitas">
+        <div class="aktivitas-1">
+            <h1>Aktivitas</h1>
+        </div>
+        <div class="aktivitas-card">
+            <div class="aktivitas-card-1">
+                <h1>12</h1>
+                <p>Pemesanan</p>
+            </div>
+            <div class="aktivitas-card-1">
+                <h1>3</h1>
+                <p>Pelaporan</p>
+            </div>
+            <div class="aktivitas-card-1">
+                <i class="fa-solid fa-check"></i>
+                <p>Aktif Minggu ini</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="preferensi">
+        <div class="preferensi-1">
+            <h1>Preferensi</h1>
+        </div>
+        <div class="preferensi-card">
+            <h1>Mode Gelap/Terang</h1>
+            <hr/>
+            <h1>Notifikasi aktif</h1>
+            <hr/>
+            <h1>Bahasa Indonesia</h1>
+        </div>
+    </div>
+    <!-- Profil end -->
+
+    <script>
+        const btn = document.getElementById('dropdownBtn')
+      const menu = document.getElementById('dropdownMenu')
+
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('show')
+      })
+
+      document.addEventListener('click', (e) => {
+  if (!btn.contains(e.target) && !btn.contains(e.target)) {
+    menu.classList.remove('show');
+  }
+});
+    </script>
+</body>
+</html>

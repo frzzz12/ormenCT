@@ -1,0 +1,1721 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+DE+VA+Guides&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* laporan begin */
+.main .main-l {
+  display: flex;
+}
+
+.main .mainl-1 {
+  display: flex;
+  background-color: #d9f0e1;
+  padding: 1.3rem;
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+  margin-left: 3rem;
+  margin-top: 1.2rem;
+  gap: 10px;
+  align-items: center;
+}
+
+.main .mainl-1 i {
+  font-size: 20px;
+}
+
+.upload-card {
+  background-color: #f9f9f9;
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: 70%;
+  transition: box-shadow 0.3s;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.upload-card i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.upload-card:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.upload-icon {
+  background-color: #00796b;
+  color: #fff;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.upload-text {
+  font-size: 16px;
+  color: #333;
+}
+
+.upload-input {
+  display: none;
+}
+
+.main .mainl-lokasi {
+  background-color: #f9f9f9;
+  width: 70%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+  padding: 20px 24px;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  border-radius: 12px;
+  transition: box-shadow 0.3s;
+}
+
+.main .mainl-lokasi:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.main .mainl-lokasi .mainl-lokasi-1 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.main .mainl-lokasi .mainl-lokasi-1 i {
+  font-size: 24px;
+}
+
+.main .mainl-lokasi .mainl-lokasi-1 input {
+  border: none;
+  width: 50%;
+  padding: 1rem;
+  background-color: #e6e6e6;
+  border-radius: 6px;
+}
+
+.main .mainl-komen {
+  background-color: #f9f9f9;
+  width: 70%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+  margin-left: 3rem;
+  margin-top: 1rem;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: box-shadow 0.3s;
+}
+
+.main .mainl-komen:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.main .mainl-komen p {
+  font-weight: 500;
+}
+
+.main .mainl-komen input {
+  width: 70%;
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 6px;
+  height: 100px;
+  margin-top: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  max-width: 500px;
+  margin-left: 0.7rem;
+}
+
+.form-group label {
+  font-size: 18px;
+}
+
+label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.2s;
+  border: none;
+  background-color: #e6e6e6;
+  width: 800px;
+  margin-top: 7px;
+  font-size: 15px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #00796b;
+}
+
+.mainl-button {
+  display: flex;
+  justify-content: center;
+  margin-left: 538px;
+  margin-top: 2rem;
+}
+
+.mainl-button button {
+  background-color: #255f38;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 0.6rem;
+  width: 200px;
+  border-radius: 9px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* laporan end */
+
+
+/* notif begin */
+.main .mainn-1 h2 {
+    margin-left: 3rem;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.main .mainn-2 {
+    display: flex;
+    margin-left: 3rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 80%;
+    background-color: #F9F9F9;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.main .mainn-2:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+
+}
+
+.main .mainn-2 .mainn-img img {
+    width: 158px;
+    height: 105px;
+    border-radius: 8px;
+}
+
+.main .mainn-2 .mainn-ket {
+    margin-left: 1rem;
+}
+
+.main .mainn-2 .mainn-ket h1 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0.5rem;
+}
+
+.main .mainn-2 .mainn-ket p {
+    margin-top: 1rem;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.main .mainn-2 .mainn-ket-2 {
+    margin-left: 1rem;
+}
+
+.main .mainn-2 .mainn-ket-2 h1 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0.5rem;
+}
+
+.main .mainn-2 .mainn-ket-2 p {
+    margin-top: 1rem;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.main .mainn-2 .mainn-ket-2 a {
+    text-decoration: none;
+    font-weight: 600;
+} 
+
+.main .mainn-3 .mainn-btn button {
+    background-color: #255f38;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 0.6rem;
+  width: 200px;
+  border-radius: 9px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+    margin-right: 16.9rem;
+    border: none;
+}
+
+.main .mainn-3 {
+    display: flex;
+    justify-content: end;
+    margin-top: 5rem;
+}
+
+/* notif end */
+
+
+/* panduan begin */
+.panduan-wrapper h1 {
+    margin-left: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.panduan-wrapper .panduan-kategori {
+    margin-top: 1.5rem;
+}
+
+.panduan-wrapper .panduan-kategori .panduan-kategori-1 {
+    display: flex;
+    margin-left: 3rem;
+}
+
+.panduan-wrapper .panduan-kategori .panduan-kategori-1 h2 {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.panduan-wrapper .panduan-kategori ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-weight: 400;
+    margin-left: 6rem;
+    font-size: 1.3rem;
+    line-height: 20px;
+    margin-top: 1rem;
+    line-height: 30px;
+}
+
+
+
+.panduan-wrapper button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.panduan-wrapper .panduan-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+/* panduan end */
+
+
+/* pencarian begin */
+
+.main-s .mains-1 h1 {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main-s .mains-2 {
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.main-s .mains-3 {
+    display: flex;
+    margin-left: 3rem;
+    gap: 25px;
+    margin-top: 1rem;
+}
+
+.main-s .mains-3 .mains-card {
+    display: flex;
+    gap: 10px;
+    background-color: #D9F0E1;
+    padding: 17px 15px;
+    font-weight: 500;
+    border-radius: 17px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.main-s .mains-3 .mains-card:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+
+}
+
+.main-s .mains-3 .mains-card i {
+    font-size: 20px;
+}
+
+/* pencarian end */
+
+/* pemesanan begin */
+
+.main .search .search-boxx {
+    display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px 16px;
+  width: 750px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.main .search .search-boxx input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+}
+
+.main .mainps {
+    display: flex;
+
+}
+
+.main .mainps .mainps-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .mainps .mainps-1 .mainps-fitur {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1.2rem;
+}
+
+.main .mainps .mainps-1 .mainps-fitur .mainps-card {
+    display: flex;
+    gap: 10px;
+    background-color: #D9F0E1;
+    padding: 17px 15px;
+    font-weight: 500;
+    border-radius: 17px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    align-items: center;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.main .mainps .mainps-1 .mainps-fitur .mainps-card:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+
+}
+
+.main .mainps .mainps-2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 3rem;
+}
+
+/* .main .mainps .mainps-2 .mainps-select {
+    margin-top: 1rem;
+
+    padding: 16px 16px;
+  border-radius: 10px;
+  width: 200px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.9);
+} */
+
+.main .mainps .mainps-2 .mainps-select select {
+    margin-top: 1rem;
+    padding: 16px 16px;
+  border-radius: 10px;
+  width: 200px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.9);
+}
+
+.main .mainps .mainps-2 .mainps-select {
+    display: flex;
+    justify-content: right;
+}
+
+
+.main .mainps .mainps-2 .mainps-3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.main .mainps .mainps-2 .mainps-3 .mainps-select-card {
+    display: flex;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    margin-top: 2rem;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.main .mainps .mainps-2 .mainps-3 .mainps-select-card:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+
+}
+
+.main .mainps .mainps-2 .mainps-3 .mainps-select-card .s-card-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.main .mainps .mainps-2 .mainps-3 .mainps-select-card .s-card-ket h1 {
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.main .mainps .mainps-2 .mainps-3 .mainps-select-card .s-card-btn button{
+    background-color: #1f7d53;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    /* width: 200px; */
+}
+
+/* pemesanan end */
+
+
+/* detail pemesanan begin */
+.dp-h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.dp-warn {
+    background-color: #D9F0E1;
+    display: flex;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    width: 60%;
+    padding: 1.4rem 1.2rem;
+    gap: 7px;
+}
+
+.dp-wrap {
+    display: flex;
+}
+
+.dp-wrap .dp-wrap-img {
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.dp-wrap .dp-wrap-ket h1{
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.dp-wrap .dp-wrap-ket h2 {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 1.2rem;
+}
+
+.dp-wrap .dp-wrap-ket .ket {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 1rem;
+}
+
+.dp-wrap .dp-wrap-ket .ket .hijau {
+    background-color: #5BB158;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-left: 4px;
+}
+
+
+.dp-wrap .dp-wrap-ket .ket .merah {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-left: 4px;
+}
+
+.dp-wrap .dp-wrap-ket .ket .ket-1 {
+    width: 130px;
+    display: flex;
+}
+
+.dp-wrap .dp-wrap-ket .ket .ket-2 {
+    width: 150px;
+    display: flex;
+}
+
+.dp-wrap .dp-wrap-ket .kendaraan {
+    margin-left: 1.5rem;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dp-wrap .dp-wrap-ket .kendaraan .mobil {
+    display: flex;
+}
+
+.dp-wrap .dp-wrap-ket .kendaraan .mobil p {
+    margin-left: 50px;
+}
+
+.dp-wrap .dp-wrap-ket .kendaraan .motor {
+    display: flex;
+    margin-top: 10px;
+}
+
+.dp-wrap .dp-wrap-ket .kendaraan .motor .hijau {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #5BB158;
+    margin-left: 7px;
+}
+
+.dp-wrap .dp-wrap-ket .kendaraan .mobil .hijau {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #5BB158;
+    margin-left: 12px;
+}
+
+.dp-wrap .dp-wrap-ket .kendaraan .motor p {
+    margin-left: 47px;
+}
+
+.dp-wrap .text {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    margin-left: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.dp-wrap .text p {
+    font-weight: 500;
+    font-size: 18px;
+    /* background-color: #255f38; */
+}
+
+.dp-wrap .text textarea {
+    width: 400px;
+}
+
+.dp-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.dp-btn button {
+    background-color: #255f38;
+    color: white;
+    padding: 1rem;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* detail pemesanan end */
+
+/* edukasi begin */
+
+.edu {
+    margin-left: 3rem;
+}
+
+.edu h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+.edu h2 {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+.edu p {
+    margin-top: 0.7rem;
+    font-weight: 500;
+}
+
+.edu .table h3 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+
+.edu .table li {
+    list-style-type: disc;
+    line-height: 20px;
+}
+
+.edu .table ul {
+    margin-left: 2.2rem;
+    margin-top: 0.3rem;
+}
+
+.edu .dampak {
+    margin-top: 1.5rem;
+}
+
+.edu .dampak h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+
+.edu .dampak ul {
+    margin-left: 2.2rem;
+    margin-top: 0.3rem;
+} 
+
+.edu .dampak li {
+    line-height: 20px;
+    font-weight: 500;
+    list-style-type: disc;
+}
+
+.edu .hukum h3 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+
+.edu .hukum ul {
+    margin-left: 2.2rem;
+    margin-top: 0.3rem;
+}
+
+.edu .hukum li {
+    list-style-type: disc;
+    line-height: 20px;
+}
+
+.edu .regulasi h3 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+
+.edu .regulasi ul {
+    margin-left: 2.2rem;
+    margin-top: 0.3rem;
+}
+
+.edu .regulasi li {
+    list-style-type: disc;
+    line-height: 20px   ;
+}
+
+.edu .edu-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.edu .edu-btn button {
+    cursor: pointer;
+    background-color: #255f38;
+    color: white;
+    padding: 1rem;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    width: 200px;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* edukasi end */
+
+/* index begin */
+
+.main-i {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.main-i .maini-1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.main-i .maini-1 .map {
+  margin-top: 2.4rem;
+  border-radius: 10px;
+  width: 800px;
+}
+
+.main-i .maini-toggle {
+  /* height: 100vh; */
+  margin-left: 3rem;
+}
+
+.main-i .maini-toggle .maini-toggle-1 {
+  display: flex;
+  padding-top: 13px;
+  justify-content: center;
+}
+
+.main-i .maini-toggle .maini-toggle-1 button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    left: -256px;
+    background-color: #255f38;
+    min-width: 250px;
+    z-index: 9999;
+    height: 100vh;
+    transition: left 0.3s ease;
+    top: 6rem;
+    border-radius: 6px;
+    display: block;
+}
+
+.dropdown.show {
+    left: 0;
+}
+
+
+.dropdown .dw-1 {
+    margin: 1rem 1rem;
+}
+
+.dropdown .dw-1 button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown .dw-a {
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F9F9;
+    height: 75%;
+}
+
+.dropdown .dw-a a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.dropdown .dw-a .dw-aa {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.dropdown .dw-a .dw-xa {
+    margin-top: 2rem;
+}
+
+.dropdown .dw-a .dw-aa:hover {
+    background-color: #D9F0E1;
+}
+
+
+.dropdown .show {
+    display: block;
+}
+
+.main-i .maini-toggle i {
+  font-size: 2rem;
+  color: black;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px 16px;
+  width: 750px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.search-icon {
+  font-size: 23px;
+  margin-right: 10px;
+  color: black;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+}
+
+.main-i .maini-2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.main-i .maini-2 .pembungkus {
+  margin-top: 1.5rem;
+}
+
+.main-i .maini-2 .maini-select select {
+  padding: 16px 16px;
+  border-radius: 10px;
+  width: 200px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.9);
+}
+
+.main-i .maini-2 .card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.3s;
+  padding: 15px;
+  margin-top: 14px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-i .maini-2 .card:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.main-i .maini-2 .card h1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.main-i .maini-2 .card .card-1 {
+  display: flex;
+}
+
+.main-i .maini-2 .card .card-1 img {
+  width: 151px;
+  height: 121;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.main-i .maini-2 .card .card-1 span {
+  font-weight: 600;
+}
+
+.main-i .maini-2 .card .card-1 p {
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.main-i .maini-2 .card .card-1 .span-1 {
+  color: #acacac;
+  font-weight: 400;
+}
+
+.main-i .maini-2 .card .card-2 {
+  display: flex;
+}
+
+.main-i .maini-2 .card .card-2 img {
+  width: 62px;
+  height: 78px;
+}
+
+.main-i .maini-2 .card .card-2 .card-3 {
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.main-i .maini-2 .card .card-2 .card-4 p {
+  line-height: 25px;
+}
+
+.fitur-big {
+  display: flex;
+  margin-top: 2rem;
+  gap: 0.7rem;
+  margin-left: 7.8rem;
+}
+
+.fitur-big .fitur {
+  background-color: #d9f0e1;
+  display: flex;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.fitur-big .fitur:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.fitur-big .fitur h1 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.fitur-big .fitur p {
+}
+
+.fitur-big .fitur .fitur-text {
+  margin-left: 0.4rem;
+}
+
+.fitur-big .fitur img {
+  width: 75px;
+  height: 78px;
+}
+
+/* index end */
+
+
+/* riwayat pemesanan begin */
+
+.rp {
+    display: flex;
+    }
+
+.rp .rp-1 button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.rp .rp-1 {
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.rp .rp-2 {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 2rem 1rem;
+    width: 80%;
+    transition: box-shadow 0.3s;
+}
+
+.rp .rp-2:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+
+}
+
+.rp .rp-2 h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.rp .rp-card {
+    display: flex;
+}
+
+.rp .rp-2 .rp-card .rp-card-ket {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.rp .rp-2 .rp-card .rp-card-ket img {
+    width: 129px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.rp .rp-3 {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: right;
+    margin-right: 1rem;
+
+}
+
+
+.rp .rp-3 button {
+    background-color: #255f38;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 11px;
+  border: none;
+  width: 14rem;
+  height: 3rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.rp .rp-2 .rp-card .rp-card-ket .rp-text h2 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+}
+
+.rp .rp-2 .rp-card .rp-card-ket .rp-text p {
+    line-height: 25px;
+}
+
+.riwayat .rp-2 {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 2rem 1rem;
+    width: 80%;
+}
+
+.riwayat .rp-2 h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+
+
+.rp .rp-3 h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.rp .rp-4{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 2rem 1rem;
+    width: 80%;
+    background-color: #E6E6E6;
+    transition: box-shadow 0.3s;
+}
+
+.rp .rp-4:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+
+}
+
+.rp .rp-4 h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* .rp .rp-4 .rp-card-3 {
+    display: flex;
+} */
+
+.rp .rp-4 .rp-card-3 .rp-card-ket-3 img {
+    width: 129px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.rp .rp-4 .rp-card-3 .rp-card-ket-3 {
+    display: flex;
+}
+
+.rp .rp-4 .rp-card-3 .rp-card-ket-3 .rp-text-3 h2 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+    color: #646464;
+
+}
+
+.rp .rp-4 .rp-card-3 .rp-card-ket-3 .rp-text-3 p {
+    line-height: 25px;
+    color: #646464;
+
+}
+
+
+.rp .rp-4 .rp-card-3 .rp-card-ket-3 {
+    gap: 1rem;
+}
+
+.rp-4 .rp-33 {
+    margin-top: 1rem;
+    justify-content: right;
+    margin-right: 1rem;
+    display: flex;
+}
+
+.rp-4 .rp-33 button {
+    background-color: #255f38;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 11px;
+  border: none;
+  width: 14rem;
+  height: 3rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;  
+}
+/* riwayat pemesanan end */
+
+
+/* statistik data begin */
+.swrap {
+    display: flex;
+}
+
+.swrap .swrap-btn {
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.swrap .swrap-btn button {
+  font-size: 2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+.swrap .swrap-card {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 50%;
+    margin-top: 3rem;
+    height: 530px;
+    margin-left: 7rem;
+}
+
+.swrap .swrap-card .swrap-card-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swrap .swrap-card .kotak {
+    width: 100%;
+    background-color: #D9D9D9;
+    height: 400px;
+    margin-top: 1rem;
+}
+
+.swrap .swrap-card .swrap-card-1 img {
+    width: 110px;
+    height: 70px;
+}
+
+.swrap .swrap-card .swrap-card-1 .swrap-card-2 {
+    line-height: 35px;
+}
+
+.swrap .swrap-card .swrap-card-1 .swrap-card-2 h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.swrap .swrap-card .swrap-card-1 .swrap-card-2 h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #5D5D5D;
+}
+
+/* statistik data end */
+
+
+/* login begin */
+.nav-img {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  background-image: url("SOURCE/IMG/image (1).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.nav-img::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 95, 56, 0.8); /* Hijau transparan */
+}
+
+
+.nav-logo {
+  position: absolute;
+  top: 90px; /* Geser sebagian ke bawah dari .nav-img */
+  left: 47%;
+  /* transform: translateX(-50%); */
+  z-index: 10;
+}
+
+.nav-logo img {
+  width: 150px; /* Sesuaikan ukuran */
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #D9F0E1; /* Opsional: bingkai putih agar terlihat menonjol */
+}
+
+.lmain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+  margin-left: 3rem;
+}
+
+.lmain h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #1f7d53;
+}
+
+.lmain p {
+  color: #1f7d53;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.form .username input{
+  padding: 1rem;
+  width: 500px;  
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border-radius: 13px;
+  border: none;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.form .password input{
+  padding: 1rem;
+  width: 500px;  
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border-radius: 13px;
+  border: none;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  margin-left: 3rem;
+  margin-top: 1.5rem;
+}
+
+.submit button {
+  padding: 1rem;
+  width: 250px;
+  font-size: 50px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border-radius: 13px;
+  border: none;
+  font-weight: 600;
+  color:white;
+  background-color: #255f38;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.otw p{
+  text-align: center;
+  margin-top: 8px;
+  margin-left: 1rem;
+}
+
+.otw a {
+  text-decoration: none;
+}
+
+/* login end */
+
+/* profil begin */
+.profil {
+    display: flex;
+}
+
+.profil .profil-1 button{
+    background: none;
+    border: none;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.profil .profil-card {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 800px;
+}
+
+.profil .profil-card .profil-card-1 {
+    display: flex;
+    margin-left: 2rem;
+}
+
+.profil .profil-card .profil-card-1 img {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+}
+
+.profil .profil-card .profil-card-1 .profil-card-ket h1{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+}   
+
+.profil .profil-card .profil-card-1 .profil-card-ket p {
+    color: #646464;
+}
+
+.profil .profil-card .profil-card-1 .profil-card-ket {
+    line-height: 25px;
+    margin-left: 2rem;
+    margin-top: 1.3rem;
+}
+
+.profil .profil-card .profil-card-2 {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.profil .profil-card .profil-card-2 button {
+    background-color: #255f38;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.aktivitas .aktivitas-1 h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-left: 8.3rem;
+    margin-top:2rem;
+}
+
+.aktivitas .aktivitas-card {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    display: flex;
+    margin-left: 8.3rem;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    width: 800px;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.aktivitas .aktivitas-card .aktivitas-card-1 h1 {
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 0.7rem;
+    font-size: 1.5rem;
+}
+
+.aktivitas .aktivitas-card .aktivitas-card-1 i {
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 0.7rem;
+    font-size: 1.5rem;
+}
+
+.aktivitas .aktivitas-card .aktivitas-card-1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.preferensi .preferensi-1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-left: 8.3rem;
+    margin-top:2rem;
+}
+
+.preferensi .preferensi-card {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    margin-left: 8.3rem;
+    width: 800px;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    line-height: 40px;
+}
+
+.preferensi .preferensi-card h1 {
+    font-weight: 600;
+    margin-left: 2rem;
+    font-size: 18px;
+}
+/* profil end */
+
+
+/* Pelaporan detail */
+
+.navbar {
+  display: flex;
+  background-color: #d9f0e1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar .div-ormen {
+  display: flex;
+  margin-left: 4rem;
+}
+
+.navbar .div-href {
+  display: flex;
+  margin-right: 10rem;
+  /* background-color: #255f38; */
+}
+
+.navbar .ormen {
+  margin-left: 2.5rem;
+}
+
+.navbar .ormen a {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #1f7d53;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar .navbar-href a {
+  color: black;
+  font-weight: 500;
+  margin: 2rem;
+  text-decoration: none;
+}
+
+.navbar .navbar-href a:hover {
+  color: #1f7d53;
+}
+
+.navbar .navbar-href {
+  /* background-color: #4a90e2; */
+}
+
+.navbar .navbar-href span {
+  color: #1f7d53;
+}
+
+.navbar .navbar-lonceng {
+  display: flex;
+  margin-right: 3rem;
+}
+
+.navbar .navbar-lonceng i {
+  color: black;
+  font-size: 1.5rem;
+}
+.navbar .navbar-lonceng i:hover {
+    color: #1f7d53;
+}
+
+.navbar .navbar-lonceng #bell {
+    color: #1f7d53;
+}
+
+.navbar .navbar-lonceng .akun {
+  background-color: #255f38;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-left: 1rem;
+}
+
+/* navbar end */
+
+/* begin main */
+
+.main .main-1 {
+}
+
+.main .main-1 h1 {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main .main-2 {
+  margin: 1.3rem 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.main .main-2 p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.9rem;
+}
+
+.main .main-2 span {
+  color: red;
+}
+
+.main .main-2 img {
+  width: 617px;
+  height: 340px;
+  border-radius: 10px;
+}
+
+.main .main-2 .main-2-ket {
+  margin-left: 5.5rem;
+}
+
+.main-button {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-button .main-button-1 {
+}
+
+.main-button .main-button-1 button {
+  background-color: #255f38;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 11px;
+  border: none;
+  width: 14rem;
+  height: 3rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.main-button .main-button-1 button:hover {
+  background-color: #1f7d53;
+}
+/* end main */

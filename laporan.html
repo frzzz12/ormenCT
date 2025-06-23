@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Pelaporan</title>
+  </head>
+  <body>
+    <!-- begin navbar -->
+    <div class="navbar">
+      <div class="div-ormen">
+        <div class="ormen">
+          <a href="index2.html">ormenCT</a>
+        </div>
+      </div>
+      <div class="div-href">
+        <div class="navbar-href">
+          <a href="index2.html">Beranda</a>
+          <a href="pemesanan.html">Pemesanan</a>
+          <a href="pencarian.html">Pencarian</a>
+          <a href="laporan.html"><span>Pelaporan</span></a>
+          <a href="edukasi.html">Edukasi</a>
+        </div>
+      </div>
+      <div>
+        <div class="navbar-lonceng">
+          <a href=""><i class="fa-solid fa-bell"></i></a>
+          <div class="akun">1</div>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- main begin -->
+    <div class="main">
+      <div class="main-1">
+        <h1>Laporan Parkir ilegal</h1>
+      </div>
+      <div class="main-l">
+        <div class="mainl-1">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <p>
+            Peringatan! pastikan informasi laporan anda benar dan tidak
+            mengada-ngada
+          </p>
+        </div>
+      </div>
+      <div class="upload-card">
+        <i class="fa-solid fa-file-import"></i>
+        <label for="upload-input" class="upload-label">
+          <div class="upload-icon">+</div>
+          <span class="upload-text">Tambahkan Foto</span>
+        </label>
+        <input
+          type="file"
+          id="upload-input"
+          class="upload-input"
+          accept="image/*"
+        />
+      </div>
+      <div class="mainl-lokasi">
+        <div class="mainl-lokasi-1">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <input type="text" placeholder="Masukkan lokasi" />
+        </div>
+      </div>
+      <div class="mainl-komen">
+        <div class="form-group">
+          <label for="deskripsi">Keterangan:</label>
+          <textarea
+            id="deskripsi"
+            placeholder="Tuliskan keterangan anda terhadap laporan ini"
+          ></textarea>
+        </div>
+      </div>
+      <div class="mainl-button">
+        <button>Kirim laporan</button>
+      </div>
+    </div>
+
+    <!-- main end -->
+  </body>
+</html>

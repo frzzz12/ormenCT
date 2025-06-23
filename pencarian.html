@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <title>Pencarian</title>
+  </head>
+  <body>
+    <!-- begin navbar -->
+    <div class="navbar">
+      <div class="div-ormen">
+        <div class="ormen">
+          <a href="index2.html">ormenCT</a>
+        </div>
+      </div>
+      <div class="div-href">
+        <div class="navbar-href">
+          <a href="index2.html">Beranda</a>
+          <a href="pemesanan.html">Pemesanan</a>
+          <a href="pencarian.html"><span>Pencarian</span></a>
+          <a href="laporan.html">Pelaporan</a>
+          <a href="edukasi.html">Edukasi</a>
+        </div>
+      </div>
+      <div>
+        <div class="navbar-lonceng">
+          <a href="notif.html"><i class="fa-solid fa-bell"></i></a>
+          <div class="akun">1</div>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- begin main -->
+    <div class="main-s">
+        <div class="mains-1">
+            <h1>Pencarian Lahan Parkir</h1>
+        </div>
+        <div class="mains-2">
+            <div class="search-box">
+            <span class="search-icon"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <input type="text" placeholder="Pencarian" />
+          </div>
+        </div>
+            <div id="map" style="height: 400px; width: 1000px; margin-left: 3rem; margin-top: 1.5rem; border-radius: 6px;" class="map"></div>
+        <div class="mains-3">
+            <div class="mains-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Lokasi Saya Sekarang</p>
+            </div>
+            <div class="mains-card">
+                <i class="fa-solid fa-street-view"></i>
+                <p>Lihat Street View</p>
+            </div>
+            <div class="mains-card">
+                <i class="fa-brands fa-google"></i>
+                <p>Telusuri Google Maps</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- begin end -->
+
+    <script>
+      const map = L.map("map").setView([-3.977, 122.515], 13);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
+    </script>
+  </body>
+</html>

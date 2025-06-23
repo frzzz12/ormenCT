@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <title>Pemesanan</title>
+  </head>
+  <body>
+    <!-- begin navbar -->
+    <div class="navbar">
+      <div class="div-ormen">
+        <div class="ormen">
+          <a href="index2.html">ormenCT</a>
+        </div>
+      </div>
+      <div class="div-href">
+        <div class="navbar-href">
+          <a href="index2.html">Beranda</a>
+          <a href="pemesanan.html"><span>Pemesanan</span></a>
+          <a href="pencarian.html">Pencarian</a>
+          <a href="laporan.html">Pelaporan</a>
+          <a href="edukasi.html">Edukasi</a>
+        </div>
+      </div>
+      <div>
+        <div class="navbar-lonceng">
+          <a href="notif.html"><i class="fa-solid fa-bell"></i></a>
+          <div class="akun">1</div>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- begin main -->
+    <div class="main">
+      <div class="main-1">
+        <h1>Pemesanan Lahan Parkir</h1>
+      </div>
+      <div class="mainps">
+        <div class="mainps-1">
+          <div class="search">
+            <div class="search-boxx">
+              <span class="search-icon"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+              <input type="text" placeholder="Pencarian" />
+            </div>
+          </div>
+          <div
+            id="map"
+            style="
+              height: 400px;
+              margin-left: 3rem;
+              margin-top: 1rem;
+              border-radius: 8px;
+            "
+            class="map"
+          ></div>
+          <div class="mainps-fitur">
+            <div class="mainps-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Lokasi Saya Sekarang</p>
+            </div>
+            <div class="mainps-card">
+              <i class="fa-solid fa-street-view"></i>
+              <p>Lihat Street View</p>
+            </div>
+            <div class="mainps-card">
+              <i class="fa-brands fa-google"></i>
+              <p>Telusuri Google Maps</p>
+            </div>
+          </div>
+        </div>
+        <div class="mainps-2">
+          <div class="mainps-select">
+            <select name="" id="">
+              <option value="Kadia" selected>Kadia</option>
+            </select>
+          </div>
+          <div class="mainps-3">
+            <div class="mainps-select-card">
+                <div class="s-card-img">
+                    <img src="SOURCE/IMG/IMG_0712.JPG" alt="gamabar">
+                </div>
+                <div class="s-card-ket">
+                    <h1>The Park Kendari</h1>
+                    <p>Jarak:120m. 8 Tersedia</p>
+                </div>
+                <div class="s-card-btn" onclick="window.location.href='detailpemesanan.html'">
+                    <button>Pesan Sekarang</button>
+                </div>
+            </div>
+            <div class="mainps-select-card">
+                <div class="s-card-img">
+                    <img src="SOURCE/IMG/IMG_0712.JPG" alt="gamabar">
+                </div>
+                <div class="s-card-ket">
+                    <h1>The Park Kendari</h1>
+                    <p>Jarak:120m. 8 Tersedia</p>
+                </div>
+                <div class="s-card-btn">
+                    <button>Pesan Sekarang</button>
+                </div>
+            </div>
+            <div class="mainps-select-card">
+                <div class="s-card-img">
+                    <img src="SOURCE/IMG/IMG_0712.JPG" alt="gamabar">
+                </div>
+                <div class="s-card-ket">
+                    <h1>The Park Kendari</h1>
+                    <p>Jarak:120m. 8 Tersedia</p>
+                </div>
+                <div class="s-card-btn">
+                    <button>Pesan Sekarang</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end main -->
+
+    <script>
+      const map = L.map("map").setView([-3.977, 122.515], 13);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(
+        map
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <title>Beranda ormenCT</title>
+  </head>
+  <body>
+    <!-- begin navbar -->
+    <div class="navbar">
+      <div class="div-ormen">
+        <div class="ormen">
+          <a href="index2.html">ormenCT</a>
+        </div>
+      </div>
+      <div class="div-href">
+        <div class="navbar-href">
+          <a href="index2.html"><span>Beranda</span></a>
+          <a href="pemesanan.html">Pemesanan</a>
+          <a href="pencarian.html">Pencarian</a>
+          <a href="laporan.html">Pelaporan</a>
+          <a href="edukasi.html">Edukasi</a>
+        </div>
+      </div>
+      <div>
+        <div class="navbar-lonceng">
+          <a href="notif.html"><i class="fa-solid fa-bell"></i></a>
+          <div class="akun">1</div>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- begin main -->
+    <div class="main-i">
+      <div class="maini-toggle">
+        <div class="maini-toggle-1">
+          <button id="dropdownBtn"><i class="fa-solid fa-bars"></i></button>
+          <div class="dropdown" id="dropdownMenu">
+            <div class="dw-1">
+              <button id="dropdownBtn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="dw-a">
+              <div class="dw-xa">
+                <div class="dw-aa" onclick="window.location.href='index2.html'" style="background-color: #D9F0E1;">
+                  <a>Beranda</a>
+                </div>
+                <div class="dw-aa" onclick="window.location.href='riwayatpemesanan.html'">
+                  <a href="riwayatpemesanan.html">Riwayat Pemesanan</a>
+                </div>
+                <div class="dw-aa" onclick="window.location.href='statistik.html'">
+                  <a href="statistik.html">Statistik Laporan</a>
+                </div>
+                <div class="dw-aa" onclick="window.location.href='profil.html'">
+                  <a href="profil.html">Profil saya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="maini-1">
+        <div class="search">
+          <div class="search-box">
+            <span class="search-icon"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <input type="text" placeholder="Pencarian" />
+          </div>
+        </div>
+        <div id="map" style="height: 400px" class="map"></div>
+      </div>
+      <div class="maini-2">
+        <div class="maini-select">
+          <select name="" id="">
+            <option value="Kadia" selected>Kadia</option>
+          </select>
+        </div>
+        <div class="pembungkus">
+          <div class="card" onclick="window.location.href='detaillapor.html'">
+            <div>
+              <h1>Laporan Parkir Terbaru</h1>
+              <div class="card-1">
+                <img
+                  src="https://media.telisik.id/assets/img/news/2024/12/praktik_parkir_liar_kawasan_eks_mtq_kendari_dikeluhkan_pengunjung.jpg?w=360&q=90"
+                  alt="ala"
+                />
+                <p>
+                  <span>MTQ</span> <br />
+                  Parkir Liar di pinggir jalan <br />
+                  <span class="span-1">15 Menit yang lalu</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="card-2">
+                <div class="card-3">
+                  <img src="SOURCE/IMG/image-removebg-preview (4).png" alt="" />
+                </div>
+                <div
+                  class="card-4"
+                  onclick="window.location.href='panduan.html'"
+                >
+                  <h1>Panduan ormenCT</h1>
+                  <p>
+                    Panduan Pemesanan dan <br />
+                    pelaporan liar
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fitur-big">
+      <div class="fitur" onclick="window.location.href='pemesanan.html'">
+        <div>
+          <img src="SOURCE/IMG/image-removebg-preview (6).png" alt="fitur-1" />
+        </div>
+        <div class="fitur-text">
+          <h1>Pemesanan</h1>
+          <p>Pesan lahan parkir di toko tujuan</p>
+        </div>
+      </div>
+      <div class="fitur" onclick="window.location.href='laporan.html'">
+        <div>
+          <img src="SOURCE/IMG/image 54.png" alt="fitur-1" />
+        </div>
+        <div class="fitur-text">
+          <h1>Pelaporan</h1>
+          <p>Laporan parkir ilegal</p>
+        </div>
+      </div>
+      <div class="fitur" onclick="window.location.href='pencarian.html'">
+        <div>
+          <img src="SOURCE/IMG/image-removebg-preview (5).png" alt="fitur-1" />
+        </div>
+        <div class="fitur-text">
+          <h1>Pencarian</h1>
+          <p>Pencarian lahan parkir</p>
+        </div>
+      </div>
+      <div class="fitur" onclick="window.location.href='edukasi.html'">
+        <div>
+          <img src="SOURCE/IMG/image-removebg-preview (3).png" alt="fitur-1" />
+        </div>
+        <div class="fitur-text">
+          <h1>Edukasi</h1>
+          <p>Edukasi mengenai parkir ilegal</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="search-box">
+      <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+      <input type="text" placeholder="Pencarian" />
+    </div>
+    <div class="maini-select">
+      <select name="" id="">
+        <option selected>Wilayah: Kadia</option>
+      </select>
+    </div> -->
+
+    <!-- end main -->
+
+    <script>
+      const map = L.map("map").setView([-3.977, 122.515], 13);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(
+        map
+      );
+
+      const btn = document.getElementById('dropdownBtn')
+      const menu = document.getElementById('dropdownMenu')
+
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('show')
+      })
+
+      document.addEventListener('click', (e) => {
+  if (!btn.contains(e.target) && !btn.contains(e.target)) {
+    menu.classList.remove('show');
+  }
+});
+
+    </script>
+  </body>
+</html>

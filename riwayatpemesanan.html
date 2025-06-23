@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Riwayat Pemesanan</title>
+</head>
+<body>
+    <!-- begin navbar -->
+    <div class="navbar">
+      <div class="div-ormen">
+        <div class="ormen">
+          <a href="index2.html">ormenCT</a>
+        </div>
+      </div>
+      <div class="div-href">
+        <div class="navbar-href">
+          <a href="index2.html">Beranda</a>
+          <a href="pemesanan.html">Pemesanan</a>
+          <a href="pencarian.html">Pencarian</a>
+          <a href="laporan.html">Pelaporan</a>
+          <a href="edukasi.html">Edukasi</a>
+        </div>
+      </div>
+      <div>
+        <div class="navbar-lonceng">
+          <a href="notif.html"><i class="fa-solid fa-bell"></i></a>
+          <div class="akun">1</div>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- begin main -->
+    <div class="rp">
+        <div class="rp-1">
+          <button id="dropdownBtn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="dropdown" id="dropdownMenu">
+            <div class="dw-1">
+              <button id="dropdownBtn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="dw-a">
+              <div class="dw-xa">
+                <div class="dw-aa" onclick="window.location.href='index2.html'">
+                  <a>Beranda</a>
+                </div>
+                <div class="dw-aa" style="background-color: #D9F0E1;" onclick="window.location.href='riwayatpemesanan.html'">
+                  <a href="riwayatpemesanan.html">Riwayat Pemesanan</a>
+                </div>
+                <div class="dw-aa" onclick="window.location.href='statistik.html'">
+                  <a href="statistik.html">Statistik Laporan</a>
+                </div>
+                <div class="dw-aa" onclick="window.location.href='profil.html'">
+                  <a href="profil.html">Profil saya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div>
+            <div class="rp-2">
+                <h1>Terbaru</h1>
+                <div class="rp-card">
+                    <div class="rp-card-ket">
+                        <img src="SOURCE/IMG/The-Park-Kendari.jpg" alt="gambar">
+                        <div class="rp-text">
+                            <h2>1 Slot The Park Kendari</h2>
+                            <p>Pemesanan anda sudah diterima! saat ini pihak Security sudah pengamankan Parkir Anda untuk Pukul <span style="color: blue;">15.00 - Selesai</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rp-3">
+                    <button>Cek Pemesanan anda</button>
+                </div>
+            </div>
+            <div class="rp-4">
+                <h1>Terbaru</h1>
+                <div class="rp-card-3">
+                    <div class="rp-card-ket-3">
+                        <img src="SOURCE/IMG/The-Park-Kendari.jpg" alt="gambar">
+                        <div class="rp-text-3">
+                            <h2>3 Slot Janji Jiwa Kendari</h2>
+                            <p>Pemesanan anda sudah diterima! saat ini pihak Security sudah pengamankan Parkir Anda untuk Pukul <span style="color: #536AA7;">10.00 - Selesai</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rp-33">
+                    <button>Cek Pemesanan anda</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main -->
+
+    <script>
+        const btn = document.getElementById('dropdownBtn')
+      const menu = document.getElementById('dropdownMenu')
+
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('show')
+      })
+
+      document.addEventListener('click', (e) => {
+  if (!btn.contains(e.target) && !btn.contains(e.target)) {
+    menu.classList.remove('show');
+  }
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Detail Pelaporan</title>
+</head>
+<body>
+    <!-- begin navbar -->
+    <div class="navbar">
+        <div class="div-ormen">
+            <div class="ormen">
+                <a href="index2.html">ormenCT</a>
+            </div>
+        </div>
+        <div class="div-href">
+            <div class="navbar-href">
+                <a href="index2.html">Beranda</a>
+                <a href="pemesanan.html">Pemesanan</a>
+                <a href="pencarian.html">Pencarian</a>
+                <a href="laporan.html"><span>Pelaporan</span></a>
+                <a href="edukasi.html">Edukasi</a>
+            </div>
+        </div>
+        <div>
+            <div class="navbar-lonceng">
+                <a href=""><i class="fa-solid fa-bell"></i></a>
+                <div class="akun">1</div>
+            </div>
+        </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- begin main -->
+     <main>
+        <div class="main">
+            <div class="main-1">
+                <h1>Laporan Parkir ilegal</h1>
+            </div>
+            <div class="main-2">
+                <img src="https://media.telisik.id/assets/img/news/2024/12/praktik_parkir_liar_kawasan_eks_mtq_kendari_dikeluhkan_pengunjung.jpg?w=360&q=90" alt="gambar-parkir">
+                <div class="main-2-ket">
+                    <p>Lokasi:MTQ, Kota Kendari <br /> Waktu: 15 menit yang lalu <br /> Keterangan: Parkir motor di trotoar umum depan taman <br/> <br/> Status: <span>Diproses</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="main-button">
+            <div class="main-button-1">
+                <button id="btn-lapor" onclick="index()">Kembali</button>
+            </div>
+        </div>
+     </main>
+     <!-- end main -->
+
+     <script>
+        let btn = document.getElementById('btn-lapor')
+        function index() {
+                window.location.href = "index2.html"
+        }
+     </script>
+</body>
+</html>
